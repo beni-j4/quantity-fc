@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantity FC | Official Website</title>
+  <style>
+    :root {
+      --cyber-blue: #00eaff;
+      --cyber-purple: #7b2cff;
+      --bg-dark: #050b11;
+      --text-light: #e8f7ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 234, 255, 0.2);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: var(--cyber-blue);
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--cyber-blue);
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--cyber-blue);
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    /* SCROLL ANIMATION */
+    .hidden {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* SECTION */
+    section {
+      padding: 100px 40px;
+    }
+
+    h3.section-title {
+      font-size: 2.5rem;
+      color: var(--cyber-purple);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 234, 255, 0.2);
+      box-shadow: 0 0 15px rgba(0, 234, 255, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 234, 255, 0.3);
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      border-top: 1px solid rgba(0, 234, 255, 0.2);
+      margin-top: 50px;
+    }
+
+    footer p {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quantity FC</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#players">Players</a>
+      <a href="#fixtures">Fixtures</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero hidden">
+    <div>
+      <h2>Welcome to Quantity FC</h2>
+      <p>The official cyber-themed home of Quantity FC. Experience football, data, and innovation blended together under one digital identity.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="hidden">
+    <h3 class="section-title">About the Club</h3>
+    <p style="max-width: 800px; margin: auto; text-align: center; opacity: 0.8; font-size: 1.1rem;">
+      Quantity FC is a digitally-inspired football club built on precision, strategy, and teamwork. Our philosophy is simple: dominate the field using intelligence, discipline, and unity.
+    </p>
+  </section>
+
+  <!-- PLAYERS -->
+  <section id="players" class="hidden">
+    <h3 class="section-title">Our Key Players</h3>
+    <div class="cards">
+      <div class="card hidden">
+        <h3>    STRIKER: EZIKIEL</h3>
+        <p>Explosive finisher with unmatched accuracy and speed.</p>
+      </div>
+
+      <div class="card hidden"> 
+        <h3>Midfielder: EMMANUEL</h3>
+        <p>Master strategist controlling the flow of the game.</p>
+      </div>
+
+      <div class="card hidden">
+        <h3>Defender: BOOCHI</h3>
+        <p>Impenetrable wall who dominates the back line.</p>
+      </div>
+
+      <div class="card hidden">
+        <h3>Goalkeeper: Samuel</h3>
+        <p>Lightning reflexes, sharp focus, and zero hesitation.</p>
+      </div>
+      <div class="card hidden">
+        <h3>Captain: BOOCHI</h3>
+        <p>Impenetrable wall who dominates the back line.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIXTURES -->
+  <section id="fixtures" class="hidden">
+    <h3 class="section-title">Upcoming Fixtures</h3>
+    <div class="cards">
+      <div class="card hidden">
+        <h3>Quantity FC vs Thunder XI</h3>
+        <p>Date: 12 Dec 2025</p>
+      </div>
+
+      <div class="card hidden">
+        <h3>Quantity FC vs Steel United</h3>
+        <p>Date: 21 Dec 2025</p>
+      </div>
+
+      <div class="card hidden">
+        <h3>Quantity FC vs Rapid Strikers</h3>
+        <p>Date: 4 Jan 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="hidden">
+    <h3 class="section-title">Contact Us</h3>
+    <p style="text-align: center; opacity: 0.8; font-size: 1.1rem; max-width: 600px; margin: auto;">
+      For inquiries, sponsorships, or collaborations, reach out to our management team via email:<br><br>
+      <strong style="color: var(--cyber-blue); font-size: 1.2rem;">boochi number</strong>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Quantity FC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+
+
+
